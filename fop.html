@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>FOP Nutrition Labels</title>
+
+	<link href="reset.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="styles_fop.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		<div class="top_nav_wrap">
+			<a href="index.html">Portfolio</a>
+		</div>
+	</header>
+
+	<main>
+		<div class="col-2-wrapper">
+			<h1>Effect of Front-of-Package Nutrition Labels on Perceived Healthiness of Packaged Foods</h1>
+		</div>	
+		
+		<h2><i>Experimental Research</i></h2>
+
+		<section>
+			<div class="col-2-wrapper">
+				<div class="img-wrap">
+					<img src="img/fop_main.jpg">
+				</div>
+			</div>	
+
+			<div class="col-1-wrapper">
+				<p class="section_title">Summary</p>
+
+				<p class="subsection_title">BACKGROUND</p>
+
+				<p>In the United States, prolonged working hours, lack of free time, and increased purchasing power of consumers have changed the way many Americans eat. Currently, popular food consumption habits and trends among individuals and households have led to a rise in non-communicable diseases such as cardiovascular disease, obesity, and diabetes. Subsequently, consumer concern for wellness is at an all-time high, and food retailers are being referred to as the “last line of defense” in the obesity war.</p><br>
+				
+				<p>Yet with healthy eating now a priority for many shoppers, how do consumers know what products are healthy, and how do they make their purchase decisions? Some manufacturers have adopted a Front-of-Package (FOP) labeling system because of two motivating factors. The first is to help inform shoppers of healthy products. The second is in shopper marketing, or marketing to customers through the use of FOP label designs.</p><br>
+				
+				<p><b><i>In an attempt to provide empirical evidence on the effects of different labeling systems on consumer perception of health, this study aimed to investigate the effects of different packaging nutrition label information on perceived healthiness.</i></b></p>
+
+				<p class="subsection_title">MY ROLE</p>
+
+				<p id="role">UX Researcher, Data Analyst</p>
+
+				<p class="subsection_title">TIMEFRAME</p>
+
+				<p id="timeframe">10 weeks (Fall 2018)</p>
+
+				<p class="section_title" id="title_bottom">Hypothesis</p>
+
+				<p>We hypothesized that displaying a Per Serving or Per Box clarification note on the FOP label would affect consumers’ perception of the healthiness of the food products shown in this study.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/hypothesis.jpg" id="hypothesis_image" alt="">
+				</div>
+
+				<p>FOP label constituted an <i>independent variable</i>. Perceived healthiness of a food item was the <i>dependent variable</i>.</p>
+
+				<p class="section_title">Study Design</p>
+
+				<p class="subsection_title">METHOD</p>
+
+				<p>A true <a href="https://en.wikipedia.org/wiki/Between-group_design" target="blank">between-subjects experimental design</a> was used for this study.</p><br>
+
+				<p>All participants were presented with a survey of 8 images of individual food packages, followed by a corresponding 7-point Likert scale (from <i>Very Unhealthy</i> to <i>Very Healthy</i>) to measure perceived healthiness. Unaltered images were presented to the Control group; the photoshopped Per Serving or Per Box labels were added to the images for the experimental conditions.</p><br>
+
+				<p>To avoid creating a misinformed bias towards foods with added vitamins and minerals, our label purely displayed calories, protein, fat and carbohydrate content.</p><br>
+			</div>	
+
+			<div class=col-2-wrapper>
+				<div class="img-wrap">
+					<img src="img/likert_scale.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="col-1-wrapper">
+				<p>The survey was designed to simulate decisions made during a typical visit to a local grocery store. We selected food packages from four categories: frozen foods, dry boxed foods, snacks, and “semi-healthy” foods.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/food_groups.jpg" alt="">
+				</div>
+
+				<p>After rating the food items, 9 demographic questions were presented. These questions were asked post-study to optimize objectivity and avoid potential internal bias caused by participants reflecting on sensitive information.</p><br>
+
+				<p>All 3 groups (Control, Per Serving, and Per Box) saw the same food package images in the same order; the only thing that varied was the FOP label.</p>
+
+				<p class="subsection_title">PARTICIPANT RECRUITMENT</p>
+
+				<ol>
+					<li id="recruitment">We used Google Forms to create our surveys and Amazon’s Mechanical Turk (MTurk) as our recruitment and consent vehicle.</li>
+					<li id="recruitment">Our representative participant pool was restricted to those residing within the U.S. and 18 years of age or older.</li>
+					<li id="recruitment">Participant assignment into each of the 3 groups was randomized. Further, we enabled features within MTurk to prevent workers from participating in our study more than once.</li>
+					<li id="recruitment">Demographic information collected included age, gender, income, education level, height, weight, BMI (calculated) and dietary restrictions, if any.</li>
+					<li id="recruitment">The survey concluded with an ask for participants’ MTurk Worker ID to verify one-time participation in the study.</li>
+				</ol> 
+
+				<p class="section_title" id="title_bottom">Statistical Analysis</p>
+
+				<p>Data cleaning and statistical analyses were performed using Microsoft Excel and RStudio. This study compared the mean perceived healthiness for each of the 8 food items across 3 groups. The mean perceived healthiness was calculated through aggregating all 7-point Likert scale responses for each food package and segmenting that data by group.</p><br>
+
+				<p>We conducted conditional tests in Excel to identify potential outliers based on specified criteria. An additional data validation test was conducted in Excel to determine if any of the participants assigned the same score to all food items (i.e. a lack of variance in responses). We did not find any such cases.</p><br>
+
+				<p>A <a href="https://en.wikipedia.org/wiki/Chi-squared_test" target="blank">Chi-Square test</a> was applied in RStudio on <i>nominal</i> demographic variables to determine if groups differed significantly. This included data for gender, education level, income, and age range. We were unable to perform a Chi-Square test for height, weight, and Body Mass Index (BMI) (height x weight) as those represented <i>ratio</i> data. Instead, we calculated BMI and compared the distribution of BMI for above and below 25 kg/m<span class="sup">2</span> (the upper range of average BMI). Statistical significance was confirmed if p < 0.05.</p><br>
+
+				<p>A <a href="https://en.wikipedia.org/wiki/One-way_analysis_of_variance" target="blank">one-way ANOVA</a> was applied in RStudio across all food items and groups to evaluate statistical significance of effect of FOP labels on perceived healthiness. In order to investigate whether age, gender, level of education, or income had any additional influence, <a href="https://en.wikipedia.org/wiki/Two-way_analysis_of_variance" target="blank">two-way ANOVAs</a> were applied to assess the influence of variables as well as their interactions. The first factor in the two-way ANOVA was the group and the second was age, gender, level of education, or income.</p><br>
+
+				<p>A <a href="https://en.wikipedia.org/wiki/Student%27s_t-test" target="blank">two-tailed t-test</a> and a <a href="https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test" target="blank">Mann-Whitney U test</a> were applied in RStudio to compare male and female populations since we did not have any non-binary participants.</p>
+
+				<p class="section_title">Results</p>
+
+				<p class="subsection_title">DATA DISTRIBUTION</p>
+
+				<p>In total, we analyzed 48 responses (16 per group). From the original 60 participants, we removed those who reported that they followed special diets because we believed their dietary restrictions could skew their perception of the healthfulness of the food items, as well as those who recorded height and weight combinations that did not seem realistic. The result yielded 384 data points (16 participants * 8 food items * 3 groups).</p><br>
+
+				<p>Data distribution for all groups, Control group and Per Serving group was <a href="https://en.wikipedia.org/wiki/Multimodal_distribution" target="blank">bi-modal</a>.</p><br>
+
+				<table>
+					<tr>
+						<td>
+							<div class="img-wrap">
+								<img src="img/all_groups_distribution.jpg" alt="">
+							</div>
+						</td>
+						<td>
+							<div class="img-wrap">
+								<img src="img/control_distribution.jpg" alt="">
+							</div>
+						</td>
+						<td>
+							<div class="img-wrap">
+								<img src="img/per_serving_distribution.jpg" alt="">
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<p>Per Box group had a <a href="https://en.wikipedia.org/wiki/Skewness" target="blank">left-skewed normal distribution</a>.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/per_box_distribution.jpg" id="per_box_distribution" alt="">
+				</div>
+
+				<p class="subsection_title">MEANS EVALUATION</p>
+
+				<p>The Per Serving and Per Box means were generally higher than those in the Control group.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/means.jpg" id="means" alt="">
+				</div>
+
+				<p class="subsection_title">DISTRIBUTION OF GROUPS</p>
+
+				<p>A Chi-Square Test was applied for nominal demographic data in RStudio to evaluate if groups differed significantly. Based on the data and significance threshold of p < 0.05, groups did not differ significantly with regard to the distribution of age, gender, income, or education level.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/distribution_of_groups.jpg" alt="">
+				</div>
+
+				<p class="subsection_title">EFFECT OF FOP LABELS</p>
+
+				<p>A one-way ANOVA was applied in RStudio across all food items and groups to evaluate statistical significance of effect of front of package labels on perceived healthiness. The parameters for the one-way ANOVA were the group and food package. None were found to be statistically significant. <b><i>As such, we failed to reject the null hypothesis</i></b>.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/fop_labels_effect.jpg" alt="">
+				</div>
+
+				<p class="subsection_title">INFLUENCES OF GENDER</p>
+
+				<p>The two-way ANOVA of participants’ gender and group on perceived healthiness for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/influences_of_gender.jpg" alt="">
+				</div>
+
+				<p>We continued our investigation into the effects of participants’ gender by comparing the male and female populations. For this, we first considered the Likert scale data to be <i>interval</i> and the score distribution to be <i>parametric</i>. We then conducted a two-tailed t-test to compare male and female populations, which yielded p = 0.87 and thus the data being not statistically significant.</p><br>
+
+				<p>To be conservative with our calculations, we also considered the Likert scale data to be <i>ordinal</i> and the score distribution to be <i>non-parametric</i>. We then conducted a Mann-Whitney U test to compare male and female populations, which also was not statistically significant.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/mann_whitney_gender.jpg" alt="">
+				</div>
+
+				<p class="subsection_title">INFLUENCES OF EDUCATION</p>
+
+				<p>A two-way ANOVA was applied in RStudio to assess the influence of participants’ education level on perceived healthiness as well as their interactions. The first factor in the two-way ANOVA was the group and the second was level of education. The data for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05, though Sweet Tea came close at p = 0.0522.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/influences_of_education.jpg" alt="">
+				</div>
+
+				<p class="subsection_title">INFLUENCES OF INCOME</p>
+
+				<p>A two-way ANOVA was applied in RStudio to assess the influence of participants’ income on the group as well as their interactions. The first factor in the two-way ANOVA was the group and the second was income range. The data for each food package resulted in most of the data not being statistically significant with a significance threshold of p < 0.05.</p><br>
+
+				<p>The interaction of the group and income range of the Cereal package proved to have a statistically significant effect on perceived healthiness, with p = 0.025. Also, the group value of the two-way ANOVA of the Oreos package proved to have a statistically significant effect on perceived healthiness, with p = 0.037.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/influences_of_income.jpg" alt="">
+				</div>
+
+				<p class="subsection_title">INFLUENCES OF AGE</p>
+
+				<p>A two-way ANOVA was applied in RStudio to assess the influence of participants’ age on the group as well as their interactions. The first factor in the two-way ANOVA was the group and the second was age range. The data for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05, though Quiche came relatively close at p = 0.0677.</p><br>
+
+				<div class="img-wrap">
+					<img src="img/influences_of_age.jpg" alt="">
+				</div>
+
+				<p class="subsection_title">INTERESTING OBSERVATIONS</p>
+
+				<p>While our study did not produce statistically significant results overall, we were able to make some interesting observations from our data.</p><br>
+
+				<table>
+					<tr>
+						<td id="left">
+							<ol>
+								<li id="observations">The product rated the most healthy was Trail Mix, with a mean score of 4.15 across groups, and the most unhealthy was Oreos with a mean score of 1.63</li>
+								<li id="observations">Cereal was rated exactly the same across all groups with a mean of 4.00</li>
+								<li id="observations">Quiche was the only food item with lower means in the Per Serving and Per Box groups than in the Control group</li>
+							</ol>
+						</td>
+						<td id="right">
+							<ol>
+								<li id="observations">Some interesting demographic results were that those with a high school education rated all food the lowest, or most unhealthy, at a mean of 2.89, and doctorates rated the foods the healthiest at 4.00</li>
+								<li id="observations">Respondents making less than $19,000 annually rated all foods higher on average than other groups</li>
+							</ol>
+						</td>
+					</tr>
+				</table>
+
+				<p class="section_title" id="title_bottom">Discussion</p>
+
+				<p>Through the 384 data points we analyzed, we concluded that the FOP labels do not affect consumers perception of the healthiness of a food. <b><i>This led us to a larger question: what is the most important factor in a consumer’s perception of a nutritional label? The label design or the consumer’s prior knowledge of nutrition</i></b>?</p><br>
+
+				<p>Our outcomes are consistent with the larger criticisms against food package labeling. There are many studies that criticize not only the design of FOP labels, but the guidelines and regulations (or lack thereof) surrounding them. Specifically, Graham et al. (2016) produced a similar study with a comparable result of FOP labeling leading to more healthful food choices not being supported. Further, Soederberg, Miller, and Cassady (2015) determined that prior knowledge of nutrition is not taken into account in many of the studies that are conducted on food labels, but nutrition knowledge is paramount in making healthy food choices.</p>
+
+				<p class="subsection_title">STUDY LIMITATIONS</p>
+
+				<p>Some limitations that may impact the larger applicability of our research are the platform and the data collection method we used.</p><br>
+
+				<p>The platform we used for recruitment, Amazon’s Mechanical Turk, is known for having participants whose work method is governed by speed of test completion instead of intrinsic motivation to advance science. This could have affected the honesty of participants’ responses – answers made quickly instead of honestly.</p><br>
+
+				<p>Another limitation of using a crowdsourcing platform is the lack of ability to dive deeper into and follow up on participants’ perception and attention (i.e. have they actually noticed the FOP labels?).</p><br>
+
+				<p>Finally, due to conducting an unmoderated, remote survey, we did not have the ability to follow up with participants and ask further questions about their decisions or if they noticed the label. Future studies can either be conducted in person or expand the survey to test for these factors.</p>
+
+				<p class="subsection_title">FUTURE DESIGN IMPLICATIONS</p>
+
+				<p>The results of our study and similar studies hint at a larger issue of a lack of consumer knowledge of nutrition. More diverse research in consumer knowledge and motivation should be taken into account. Future experiments could include:</p><br>
+
+				<ul>
+					<li>Performing the experiment in a physical grocery store</li>
+					<li>Different FOP placement, content, color scheme, visual design, and font variation</li>
+					<li>Labels with “Organic”, “Low Carb”, or specific diet terms (e.g. “Keto”, “Vegan”)</li>
+					<li>Food package placement on shelves (front of package, nutrition label facing front)</li>
+					<li>Testing for nutrition knowledge before the study</li>
+				</ul>
+			</div>	
+
+			<div class="col-3-wrapper" id="hide">
+				<p class="section_title" id="title_bottom">Final Presentation</p>
+
+				<iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=ftmfvsa0p&bgcolor=EEEEEE&t=1546501453" width="640" height="385" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+			</div>	
+
+			<div class="col-1-wrapper">
+				
+				<div class="img-wrap">
+					<img src="img/fop_icon.jpg" id="icon" alt="">
+				</div>
+
+				<div class="project-nav-wrap">
+					<a href="index.html"><div class="left-nav">home<div class="text-on-hover">< Back to Portfolio</div></div></a>
+				</div>
+			</div>	
+
+		</section>
+
+	</main>
+
+	<footer>Built from scratch by Yeva T. &copy; 2019</footer>
+
+</body>
+</html>
