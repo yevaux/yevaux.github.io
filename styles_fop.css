@@ -147,6 +147,7 @@ ol > li:before {
 	color: #9F3040;
 	position: absolute;
     left: -1.2em; 
+    padding-left: 8px; 
     width: 0.8em; 
     font-size: 2em;
     line-height: 1;
@@ -930,12 +931,12 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	height: 70px;
+	height: 60px;
     z-index: 9999;
 }
 
 .top_nav_wrap {
-	padding: 25px 10px;
+	padding: 20px 10px;
 }
 
 header a {
@@ -1055,6 +1056,7 @@ section p {
 
 iframe {
 	width: 100%; 
+	margin-top: 30px; 
 }
 
 /* Wrappers & Columns 
