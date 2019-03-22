@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>FOP Nutrition Labels</title>
+	<title>Tableau</title>
 
 	<link href="reset.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
@@ -24,15 +24,15 @@
 
 	<main>
 		<div class="col-2-wrapper">
-			<h1>Effect of Front-of-Package Nutrition Labels on Perceived Healthiness of Packaged Foods</h1>
+			<h1>Tableau Help Evaluation</h1>
 		</div>	
 		
-		<h2><i>Experimental Research</i></h2>
+		<h2><i>Usability Study</i></h2>
 
-		<section>
+		<!-- <section>
 			<div class="col-2-wrapper">
 				<div class="img-wrap">
-					<img src="img/fop_main.jpg">
+					<img src="img/coming_soon.jpg">
 				</div>
 			</div>	
 
@@ -86,100 +86,14 @@
 				<div class="img-wrap">
 					<img src="img/likert_scale.jpg" alt="">
 				</div>
-			</div>
+			</div> -->
 
 			<div class="col-1-wrapper">
-				<p>The survey was designed to simulate decisions made during a typical visit to a local grocery store. We selected food packages from four categories: frozen foods, dry boxed foods, snacks, and “semi-healthy” foods.</p><br>
-
 				<div class="img-wrap">
-					<img src="img/food_groups.jpg" alt="">
+					<img src="img/coming_soon.jpg" alt="">
 				</div>
 
-				<p>After rating the food items, 9 demographic questions were presented. These questions were asked post-study to optimize objectivity and avoid potential internal bias caused by participants reflecting on sensitive information.</p><br>
-
-				<p>All 3 groups (Control, Per Serving, and Per Box) saw the same food package images in the same order; the only thing that varied was the FOP label.</p>
-
-				<p class="subsection_title">PARTICIPANT RECRUITMENT</p>
-
-				<ol>
-					<li id="recruitment">We used Google Forms to create our surveys and Amazon’s Mechanical Turk (MTurk) as our recruitment and consent vehicle.</li>
-					<li id="recruitment">Our representative participant pool was restricted to those residing within the U.S. and 18 years of age or older.</li>
-					<li id="recruitment">Participant assignment into each of the 3 groups was randomized. Further, we enabled features within MTurk to prevent workers from participating in our study more than once.</li>
-					<li id="recruitment">Demographic information collected included age, gender, income, education level, height, weight, BMI (calculated) and dietary restrictions, if any.</li>
-					<li id="recruitment">The survey concluded with an ask for participants’ MTurk Worker ID to verify one-time participation in the study.</li>
-				</ol> 
-
-				<p class="section_title" id="title_bottom">Statistical Analysis</p>
-
-				<p>Data cleaning and statistical analyses were performed using Microsoft Excel and RStudio. This study compared the mean perceived healthiness for each of the 8 food items across 3 groups. The mean perceived healthiness was calculated through aggregating all 7-point Likert scale responses for each food package and segmenting that data by group.</p><br>
-
-				<p>We conducted conditional tests in Excel to identify potential outliers based on specified criteria. An additional data validation test was conducted in Excel to determine if any of the participants assigned the same score to all food items (i.e. a lack of variance in responses). We did not find any such cases.</p><br>
-
-				<p>A <b>Chi-Square test</b> was applied in RStudio on <i>nominal</i> demographic variables to determine if groups differed significantly. This included data for gender, education level, income, and age range. We were unable to perform a Chi-Square test for height, weight, and Body Mass Index (BMI) (height x weight) as those represented <i>ratio</i> data. Instead, we calculated BMI and compared the distribution of BMI for above and below 25 kg/m<span class="sup">2</span> (the upper range of average BMI). Statistical significance was confirmed if p < 0.05.</p><br>
-
-				<p>A <b>one-way ANOVA</b> was applied in RStudio across all food items and groups to evaluate statistical significance of effect of FOP labels on perceived healthiness. In order to investigate whether age, gender, level of education, or income had any additional influence, <b>two-way ANOVAs</b> were applied to assess the influence of variables as well as their interactions. The first factor in the two-way ANOVA was the group and the second was age, gender, level of education, or income.</p><br>
-
-				<p>A <b>two-tailed t-test</b> and a <b>Mann-Whitney U test</b> were applied in RStudio to compare male and female populations since we did not have any non-binary participants.</p>
-
-				<p class="section_title">Results</p>
-
-				<p class="subsection_title">DATA DISTRIBUTION</p>
-
-				<p>In total, we analyzed 48 responses (16 per group). From the original 60 participants, we removed those who reported that they followed special diets because we believed their dietary restrictions could skew their perception of the healthfulness of the food items, as well as those who recorded height and weight combinations that did not seem realistic. The result yielded 384 data points (16 participants * 8 food items * 3 groups).</p><br>
-
-				<p>Data distribution for all groups, Control group and Per Serving group was <b>bimodal</b>.</p><br>
-
-				<table>
-					<tr>
-						<td>
-							<div class="img-wrap">
-								<img src="img/all_groups_distribution.jpg" alt="">
-							</div>
-						</td>
-						<td>
-							<div class="img-wrap">
-								<img src="img/control_distribution.jpg" alt="">
-							</div>
-						</td>
-						<td>
-							<div class="img-wrap">
-								<img src="img/per_serving_distribution.jpg" alt="">
-							</div>
-						</td>
-					</tr>
-				</table>
-
-				<p>Per Box group had a <b>left-skewed normal distribution</b>.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/per_box_distribution.jpg" id="per_box_distribution" alt="">
-				</div>
-
-				<p class="subsection_title">MEANS EVALUATION</p>
-
-				<p>The Per Serving and Per Box means were generally higher than those in the Control group.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/means.jpg" id="means" alt="">
-				</div>
-
-				<p class="subsection_title">DISTRIBUTION OF GROUPS</p>
-
-				<p>A Chi-Square Test was applied for nominal demographic data in RStudio to evaluate if groups differed significantly. Based on the data and significance threshold of p < 0.05, groups did not differ significantly with regard to the distribution of age, gender, income, or education level.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/distribution_of_groups.jpg" alt="">
-				</div>
-
-				<p class="subsection_title">EFFECT OF FOP LABELS</p>
-
-				<p>A one-way ANOVA was applied in RStudio across all food items and groups to evaluate statistical significance of effect of front of package labels on perceived healthiness. The parameters for the one-way ANOVA were the group and food package. None were found to be statistically significant. <b><i>As such, we failed to reject the null hypothesis</i></b>.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/fop_labels_effect.jpg" alt="">
-				</div>
-
-				<p class="subsection_title">INFLUENCES OF GENDER</p>
+				<!--<p class="subsection_title">INFLUENCES OF GENDER</p>
 
 				<p>The two-way ANOVA of participants’ gender and group on perceived healthiness for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05.</p><br>
 
@@ -273,18 +187,17 @@
 				
 				<div class="img-wrap">
 					<img src="img/fop_icon.jpg" id="icon" alt="">
-				</div>
+				</div> -->
 
 				<div class="project-nav-wrap">
 					<a href="index.html"><div class="left-nav">home<div class="text-on-hover">< Back to Portfolio</div></div></a>
-				
-					<a href="transactions.html"><div class="right-nav">next<div class="text-on-hover">Digital Transactions Experience ></div></div></a> 
+				</div>
 			</div>	
 
 		</section>
 
 	</main>
-
+			
 	<footer>Built from scratch by Yeva T. &copy; 2019</footer>
 
 </body>

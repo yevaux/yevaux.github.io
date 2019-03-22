@@ -63,7 +63,15 @@ main h2 {
 	font-size: 20px;
 	font-weight: 540;
 	letter-spacing: 1px;
-	margin-bottom: 12px;
+	margin-bottom: 10px;
+}
+
+main h3 {
+	font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	text-align: left; 
+	font-size: 19px;
+	font-weight: 540;
+	letter-spacing: 1px; 
 }
 
 main a {
@@ -105,6 +113,14 @@ section p {
 	color: #333333;
 }
 
+blockquote {
+	text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 21px;
+    color: rgb(0,128,255);
+}
+
 iframe {
 	display: none; 
 }
@@ -114,8 +130,12 @@ iframe {
 
 .img-wrap img {
 	width: 100%;
-	padding-bottom: 5px; 
+	padding-bottom: 5px;
 } 
+
+#process, #identity, #safety, #cash_accessory, #sharing_finances {
+	display: none; 
+}
 
 /* Tables
 ================================================== */
@@ -124,12 +144,21 @@ td {
 	display: block;
 }
 
+table#study_value {
+	display: none;
+}
+
+#influences_table {
+	display: none; 
+}
+
 /* Lists 
 ================================================== */
 
 ol {
 	list-style-type: none;
     list-style-type: decimal !ie; /*IE 7- hack*/
+    margin: 0 20px;
     counter-reset: li-counter;
     max-width: 100%;
     font-size: 20px;
@@ -139,42 +168,20 @@ ol > li {
 	border-left: 2px solid #9F3040;
 	position: relative; 
     margin-bottom: 30px;
-    padding-left: 1em; 
+    padding-left: 1em;
     min-height: 3em;
 }
 
 ol > li:before {
 	color: #9F3040;
 	position: absolute;
-    left: -1.2em; 
-    padding-left: 8px; 
-    width: 0.8em; 
+    left: -1.2em;
+    width: 0.8em;
     font-size: 2em;
     line-height: 1;
     font-weight: bold;
     text-align: right;
     content: counter(li-counter);
-    counter-increment: li-counter;
-}
-
-ol > li#observations {
-	position: relative; 
-    margin-bottom: 30px;
-    padding-left: 2em; 
-    min-height: 3em;
-    border-left: none;
-}
-
-ol > li#observations:before {
-	color: rgb(0,128,255);
-	position: absolute;
-    left: -0.2em;
-    width: 0.8em;
-    font-size: 1.6em;
-    line-height: 1;
-    font-weight: bold;
-    text-align: right;
-    content: counter(li-counter, circle);
     counter-increment: li-counter;
 }
 
@@ -193,18 +200,25 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
-#title_bottom {
-	margin-bottom: 20px; 
+#hide_mobile {
+	display: none;
 }
 
-#hide {
+#ecosystem_schema {
+	color: rgb(0,128,255);
+}
+
+#process_book {
 	display: none; 
 }
 
 #icon {
 	width: 20%;
 	display: block;
-	margin: 28px auto;
+	margin-top: 22px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 14px; 
 }
 
 /* Project Bottom Navigation
@@ -276,15 +290,15 @@ main {
 	line-height: 30px;
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-top: 16%;
-	margin-bottom: 0.5%; 
+	margin-top: 20%;
+	margin-bottom: 4%; 
 }
 
 main h1 {
 	font-family: 'Work Sans', sans-serif;
 	text-align: center; 
 	font-size: 42px;
-	line-height: 44px; 
+	line-height: 38px; 
 	letter-spacing: 1px;
 	margin-bottom: 20px;
 }
@@ -295,7 +309,7 @@ main h2 {
 	font-size: 28px;
 	font-weight: 540;
 	letter-spacing: 1px;
-	margin-bottom: 22px;
+	margin-bottom: 10px;
 }
 
 main h3 {
@@ -329,7 +343,7 @@ section {
 	text-align: center;
 	font-size: 28px;
 	font-weight: 600;
-	line-height: 20px;
+	line-height: 28px;
 	color: #a22f41;
 	letter-spacing: 1px; 
 	margin-top: 40px;
@@ -345,6 +359,13 @@ section p {
 	color: #333333;
 }
 
+blockquote {
+	text-align: center;
+    font-size: 28px;
+    line-height: 36px; 
+    color: rgb(0,128,255);
+}
+
 iframe {
 	display: none; 
 }
@@ -355,34 +376,27 @@ iframe {
 .img-wrap img {
 	width: 100%;
 	padding-bottom: 5px; 
+}
+
+#process {
+	width: 106%; 
 } 
 
-#per_box_distribution {
-	width: 32%; 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#identity, #safety, #cash_accessory, #sharing_finances {
+	display: none; 
 }
 
 /* Tables
 ================================================== */
 
 td {
-	vertical-align: top; 
+	display: block;
+	/* vertical-align: top; */ 
 }
 
-#left, #right {
-	width: 50%; 
-}
-
-#left {
-	border-right: 4px solid rgb(0,128,255);
-	padding-right: 30px;
-}
-
-#right {
-	padding-left: 30px;
-}
+#study_value, #influences_table {
+	display: none; 
+} 
 
 /* Lists 
 ================================================== */
@@ -417,27 +431,6 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
-ol > li#observations {
-	position: relative; 
-    margin-bottom: 30px;
-    padding-left: 2em;
-    min-height: 3em;
-    border-left: none;
-}
-
-ol > li#observations:before {
-	color: rgb(0,128,255);
-	position: absolute;
-    left: -0.2em;
-    width: 0.8em;
-    font-size: 1.6em;
-    line-height: 1;
-    font-weight: bold;
-    text-align: right;
-    content: counter(li-counter, circle);
-    counter-increment: li-counter;
-}
-
 ul {
 	font-size: 26px; 
 	line-height: 36px;
@@ -454,26 +447,37 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
+#hide_tablet {
+	display: none; 
+}
+
 #timeframe, #role {
 	text-align: center;
 }
 
-#title_bottom {
-	margin-bottom: 30px; 
+#subtitle {
+	text-align: center;
+}
+
+#hide_mobile {
+	visibility: visible;
+}
+
+#ecosystem_schema {
+	color: rgb(0,128,255);
 }
 
 #process_book {
 	display: none; 
 }
 
-#hide {
-	display: none; 
-}
-
 #icon {
 	width: 12%;
 	display: block;
-	margin: 50px auto;
+	margin-top: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 14px; 
 }
 
 /* Project Bottom Navigation
@@ -689,6 +693,13 @@ section p {
 	color: #333333;
 }
 
+blockquote {
+	text-align: center;
+    font-size: 34px;
+    line-height: 43px; 
+    color: rgb(0,128,255);
+}
+
 iframe {
 	display: none; 
 }
@@ -701,9 +712,28 @@ iframe {
 	padding-bottom: 5px; 
 } 
 
-#per_box_distribution {
-	width: 32%; 
-	display: block;
+#process {
+	width: 105%; 
+}
+
+#ecosystem_image {
+	width: 76%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#influences_image {
+	width: 80%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#identity, #safety, #cash_accessory, #sharing_finances {
+	display: none; 
+}
+
+#digital_handshake {
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -712,20 +742,25 @@ iframe {
 ================================================== */
 
 td {
-	vertical-align: top; 
+	display: block;
+	vertical-align: top;
 }
 
-#left, #right {
-	width: 50%; 
+table {
+	padding-bottom: 5px; 
 }
 
-#left {
-	border-right: 4px solid rgb(0,128,255);
-	padding-right: 30px;
+th {
+	text-align: center;
 }
 
-#right {
-	padding-left: 30px;
+#study_value, #influences_table {
+	display: none;
+}
+
+#ecosystem_table {
+	padding-top: 5%;
+	padding-left: 2%;
 }
 
 /* Lists 
@@ -761,27 +796,6 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
-ol > li#observations {
-	position: relative; 
-    margin-bottom: 30px;
-    padding-left: 2em;
-    min-height: 3em;
-    border-left: none;
-}
-
-ol > li#observations:before {
-	color: rgb(0,128,255);
-	position: absolute;
-    left: -0.2em;
-    width: 0.8em;
-    font-size: 1.6em;
-    line-height: 1;
-    font-weight: bold;
-    text-align: right;
-    content: counter(li-counter, circle);
-    counter-increment: li-counter;
-}
-
 ul {
 	font-size: 32px; 
 	line-height: 44px;
@@ -798,26 +812,36 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
+#hide_tablet {
+	display: none; 
+}
+
+#hide_mobile {
+	visibility: visible;
+}
+
+#ecosystem_schema {
+	color: rgb(0,128,255);
+}
+
 #timeframe, #role {
 	text-align: center;
 }
 
-#title_bottom {
-	margin-bottom: 30px; 
+#subtitle {
+	text-align: center;
 }
 
 #process_book {
 	display: none; 
 }
 
-#hide {
-	display: none; 
-}
-
 #icon {
 	width: 12%;
 	display: block;
-	margin: 50px auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 14px; 
 }
 
 /* Project Bottom Navigation
@@ -943,7 +967,7 @@ header {
 
 .top_nav_wrap {
 	padding: 20px 10px;
-}
+} 
 
 header a {
 	color: white;
@@ -992,8 +1016,8 @@ main {
 	font-style: normal;
 	font-size: 21px;
 	line-height: 30px;
-	margin-top: 12%;
-	margin-bottom: 8px; 
+	margin-top: 11%;
+	margin-bottom: 10px; 
 }
 
 main h1 {
@@ -1012,6 +1036,14 @@ main h2 {
 	font-weight: 540;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
+}
+
+main h3 {
+	font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	text-align: center; 
+	font-size: 17px;
+	font-weight: 540;
+	letter-spacing: 1px;
 }
 
 main a {
@@ -1054,15 +1086,16 @@ section p {
 	color: #333333;
 }
 
-.sup { 
-    vertical-align: super; 
-    font-size: 10px; 
-    line-height: 11px; 
+blockquote {
+	text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    color: rgb(0,128,255);
 }
 
 iframe {
 	width: 100%; 
-	margin-top: 30px; 
 }
 
 /* Wrappers & Columns 
@@ -1083,27 +1116,39 @@ iframe {
 
 .img-wrap img {
 	width: 100%;
-	margin-bottom: 16px; 
-	margin-bottom: 16px; 
+	padding-bottom: 5px; 
 } 
 
-#hypothesis_image {
+#ecosystem_image {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#influences_image {
+	width: 56%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#identity {
+	width: 80%;
+	float: right; 
+}
+
+#safety {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cash_accessory {
+	width: 85%;
+	float: left;
+}
+
+#digital_handshake {
 	width: 70%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#per_box_distribution {
-	width: 32%; 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#means {
-	width: 90%;
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1111,14 +1156,27 @@ iframe {
 /* Tables
 ================================================== */
 
+table {
+	padding-bottom: 5px; 
+}
+
+th {
+	text-align: center;
+}
+
 td {
 	vertical-align: top; 
-	font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 29px;
-	color: #333333; 
+}
+
+#study_value {
+	text-align: center; 
+	border-collapse: collapse;
+	border: 1px solid grey;
+}
+
+#ecosystem_table {
+	padding-top: 5%;
+	padding-left: 2%;
 }
 
 #left, #right {
@@ -1127,12 +1185,35 @@ td {
 
 #left {
 	border-right: 4px solid rgb(0,128,255);
-	padding-right: 46px;
+	padding-right: 30px;
 }
 
 #right {
-	padding-left: 46px;
+	padding-left: 30px;
 }
+
+#identity_table_left {
+	padding-right: 3%;
+	padding-top: 1%; 
+}
+
+#safety_table_right {
+	padding-left: 3%; 
+	padding-top: 8%;
+}
+
+#cash_accessory_table_left {
+	width: 70%;
+	padding-right: 6%;
+	padding-top: 8%;
+}
+
+#sharing_finances_table_right {
+	width: 60%;
+	padding-left: 4%;
+	padding-top: 4.3%; 
+}
+
 
 /* Lists 
 ================================================== */
@@ -1142,6 +1223,7 @@ ol {
     list-style-type: decimal !ie; /*IE 7- hack*/
     margin: 0 auto;
     counter-reset: li-counter;
+    max-width: 550px;
     font-size: 16px;
 }
 
@@ -1152,6 +1234,7 @@ ol > li {
     padding-left: 2em;
     min-height: 3em;
     text-align: left;
+    z-index: -1; 
 }
 
 ol > li:before {
@@ -1167,7 +1250,7 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
-ol > li#observations {
+ol > li#influences_table {
 	position: relative; 
     margin-bottom: 30px;
     padding-left: 2em;
@@ -1175,7 +1258,7 @@ ol > li#observations {
     border-left: none;
 }
 
-ol > li#observations:before {
+ol > li#influences_table:before {
 	color: rgb(0,128,255);
 	position: absolute;
     left: -0.2em;
@@ -1191,6 +1274,7 @@ ol > li#observations:before {
 ul {
 	font-size: 16px; 
 	list-style-position: outside;
+	padding-left: 7%;
 }
 
 ul > li::before {
@@ -1205,18 +1289,33 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
-#timeframe, #role {
+#role, #timeframe {
 	text-align: center;
 }
 
-#title_bottom {
+#hide_mobile {
+	visibility: visible;
+}
+
+#title_adjusted {
+	margin-top: 15px;
 	margin-bottom: 30px; 
+}
+
+#ecosystem_schema {
+	color: rgb(0,128,255);
+}
+
+#title_top {
+	margin-top: 20px;
 }
 
 #icon {
 	width: 8%;
+	margin-top: 26px;
 	display: block;
-	margin: 25px auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Project Bottom Navigation
