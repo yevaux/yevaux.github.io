@@ -133,7 +133,7 @@ iframe {
 	padding-bottom: 5px;
 } 
 
-#process, #identity, #safety, #cash_accessory, #sharing_finances {
+#process, #identity, #safety, #trust, #cash_accessory, #sharing_finances {
 	display: none; 
 }
 
@@ -148,8 +148,13 @@ table#study_value {
 	display: none;
 }
 
-#influences_table {
-	display: none; 
+.influences {
+	width: 100%;
+}
+
+.col_left, .col_right {
+	width: 100%;
+	float: left;
 }
 
 /* Lists 
@@ -185,6 +190,27 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
+ol > li#influences_table {
+	position: relative; 
+    margin-bottom: 30px;
+    padding-left: 2em;
+    min-height: 3em;
+    border-left: none;
+}
+
+ol > li#influences_table:before {
+	color: rgb(0,128,255);
+	position: absolute;
+    left: -0.2em;
+    width: 0.8em;
+    font-size: 1.6em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    content: counter(li-counter, circle);
+    counter-increment: li-counter;
+}
+
 ul {
 	font-size: 20px; 
 	list-style-position: outside;
@@ -200,7 +226,7 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
-#hide_mobile {
+#hide_mobile, #show_tablet {
 	display: none;
 }
 
@@ -382,21 +408,65 @@ iframe {
 	width: 106%; 
 } 
 
-#identity, #safety, #cash_accessory, #sharing_finances {
-	display: none; 
+#ecosystem_image {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#influences_image {
+	width: 80%; 
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Tables
 ================================================== */
 
-td {
-	display: block;
-	/* vertical-align: top; */ 
+#study_value {
+	display: none;
 }
 
-#study_value, #influences_table {
-	display: none; 
+#ecosystem_table {
+	vertical-align: middle;
+	display: block;
+}
+
+.influences, .context {
+	width: 100%;
+}
+
+.col_left, .col_right {
+	width: 50%;
 } 
+
+.col_left {
+	float: left;
+	padding-right: 30px;
+}
+
+.col_right {
+	float: right; 
+	padding-left: 30px;
+} 
+
+#influences_left {
+	border-right: 4px solid rgb(0,128,255);
+}
+
+.table_left, .table_right {
+	width: 50%;
+	vertical-align: middle;
+	padding: 10px 16px;
+}
+
+#identity_left, #trust_left, #sharing_finances_left {
+	background-color: rgb(245,245,245);
+}
+
+#safety_right, #cash_accessory_right {
+	background-color: rgb(230,249,255);
+}
 
 /* Lists 
 ================================================== */
@@ -431,6 +501,27 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
+ol > li#influences_table {
+	position: relative; 
+    margin-bottom: 30px;
+    padding-left: 2em;
+    min-height: 3em;
+    border-left: none;
+}
+
+ol > li#influences_table:before {
+	color: rgb(0,128,255);
+	position: absolute;
+    left: -0.2em;
+    width: 0.8em;
+    font-size: 1.6em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    content: counter(li-counter, circle);
+    counter-increment: li-counter;
+}
+
 ul {
 	font-size: 26px; 
 	line-height: 36px;
@@ -447,7 +538,7 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
-#hide_tablet {
+#hide_tablet, #show_mobile {
 	display: none; 
 }
 
@@ -477,7 +568,6 @@ ul > li::before {
 	margin-top: 36px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 14px; 
 }
 
 /* Project Bottom Navigation
@@ -686,7 +776,7 @@ section {
 
 section p {
 	font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	font-size: 32px;
+	font-size: 26px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 44px;
@@ -695,7 +785,7 @@ section p {
 
 blockquote {
 	text-align: center;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 43px; 
     color: rgb(0,128,255);
 }
@@ -717,7 +807,7 @@ iframe {
 }
 
 #ecosystem_image {
-	width: 76%;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -728,9 +818,17 @@ iframe {
 	margin-right: auto;
 }
 
-#identity, #safety, #cash_accessory, #sharing_finances {
-	display: none; 
+#safety {
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+#cash_accessory {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}  
 
 #digital_handshake {
 	width: 80%;
@@ -741,11 +839,6 @@ iframe {
 /* Tables
 ================================================== */
 
-td {
-	display: block;
-	vertical-align: top;
-}
-
 table {
 	padding-bottom: 5px; 
 }
@@ -754,13 +847,53 @@ th {
 	text-align: center;
 }
 
-#study_value, #influences_table {
+td {
+	vertical-align: top; 
+}
+
+#study_value {
 	display: none;
 }
 
 #ecosystem_table {
-	padding-top: 5%;
-	padding-left: 2%;
+	vertical-align: middle;
+	display: block;
+}
+
+.influences, .context {
+	width: 100%;
+}
+
+.col_left, .col_right {
+	width: 50%;
+} 
+
+.col_left {
+	float: left;
+	padding-right: 30px;
+}
+
+.col_right {
+	float: right; 
+	padding-left: 30px;
+} 
+
+#influences_left {
+	border-right: 4px solid rgb(0,128,255);
+}
+
+.table_left, .table_right {
+	width: 50%;
+	vertical-align: middle;
+	padding: 10px 16px;
+}
+
+#identity_left, #trust_left, #sharing_finances_left {
+	background-color: rgb(245,245,245);
+}
+
+#safety_right, #cash_accessory_right {
+	background-color: rgb(230,249,255);
 }
 
 /* Lists 
@@ -771,7 +904,7 @@ ol {
     list-style-type: decimal !ie; /*IE 7- hack*/
     counter-reset: li-counter;
     max-width: 100%;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 44px;
 }
 
@@ -796,8 +929,29 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
+ol > li#influences_table {
+	position: relative; 
+    margin-bottom: 30px;
+    padding-left: 2em;
+    min-height: 3em;
+    border-left: none;
+}
+
+ol > li#influences_table:before {
+	color: rgb(0,128,255);
+	position: absolute;
+    left: -0.2em;
+    width: 0.8em;
+    font-size: 1.6em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    content: counter(li-counter, circle);
+    counter-increment: li-counter;
+}
+
 ul {
-	font-size: 32px; 
+	font-size: 26px; 
 	line-height: 44px;
 	list-style-position: outside;
 }
@@ -812,7 +966,7 @@ ul > li::before {
 /* Miscellaneous Adjustments 
 ================================================== */
 
-#hide_tablet {
+#hide_tablet, #show_mobile {
 	display: none; 
 }
 
@@ -841,7 +995,7 @@ ul > li::before {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 14px; 
+	margin-top: 44px; 
 }
 
 /* Project Bottom Navigation
@@ -1120,7 +1274,7 @@ iframe {
 } 
 
 #ecosystem_image {
-	width: 80%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1131,21 +1285,17 @@ iframe {
 	margin-right: auto;
 }
 
-#identity {
-	width: 80%;
-	float: right; 
-}
-
 #safety {
-	width: 80%;
+	width: 92%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #cash_accessory {
-	width: 85%;
-	float: left;
-}
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
 
 #digital_handshake {
 	width: 70%;
@@ -1175,45 +1325,44 @@ td {
 }
 
 #ecosystem_table {
-	padding-top: 5%;
-	padding-left: 2%;
+	vertical-align: middle;
 }
 
-#left, #right {
-	width: 50%; 
+.influences, .context {
+	width: 100%;
 }
 
-#left {
-	border-right: 4px solid rgb(0,128,255);
+.col_left, .col_right {
+	width: 50%;
+}
+
+.col_left {
+	float: left;
 	padding-right: 30px;
 }
 
-#right {
+.col_right {
+	float: right; 
 	padding-left: 30px;
+} 
+
+#influences_left {
+	border-right: 4px solid rgb(0,128,255);
 }
 
-#identity_table_left {
-	padding-right: 3%;
-	padding-top: 1%; 
+.table_left, .table_right {
+	width: 50%;
+	vertical-align: middle;
+	padding: 10px 16px;
 }
 
-#safety_table_right {
-	padding-left: 3%; 
-	padding-top: 8%;
+#identity_left, #trust_left, #sharing_finances_left {
+	background-color: rgb(245,245,245);
 }
 
-#cash_accessory_table_left {
-	width: 70%;
-	padding-right: 6%;
-	padding-top: 8%;
+#safety_right, #cash_accessory_right {
+	background-color: rgb(230,249,255);
 }
-
-#sharing_finances_table_right {
-	width: 60%;
-	padding-left: 4%;
-	padding-top: 4.3%; 
-}
-
 
 /* Lists 
 ================================================== */
@@ -1297,6 +1446,10 @@ ul > li::before {
 	visibility: visible;
 }
 
+#show_tablet, #show_mobile {
+	display: none; 
+}
+
 #title_adjusted {
 	margin-top: 15px;
 	margin-bottom: 30px; 
@@ -1304,10 +1457,6 @@ ul > li::before {
 
 #ecosystem_schema {
 	color: rgb(0,128,255);
-}
-
-#title_top {
-	margin-top: 20px;
 }
 
 #icon {
