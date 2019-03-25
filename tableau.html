@@ -5,13 +5,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Tableau</title>
+	<title>Tableau Help</title>
 
 	<link href="reset.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="styles_fop.css" rel="stylesheet" />
+	<link href="styles_tableau.css" rel="stylesheet" />
 
 </head>
 
@@ -29,175 +29,481 @@
 		
 		<h2><i>Usability Study</i></h2>
 
-		<!-- <section>
-			<div class="col-2-wrapper">
-				<div class="img-wrap">
-					<img src="img/coming_soon.jpg">
-				</div>
-			</div>	
-
+		<section>
 			<div class="col-1-wrapper">
+				<div class="img-wrap">
+					<img src="img/tableau_main.png">
+				</div>
+			
 				<p class="section_title">Summary</p>
 
 				<p class="subsection_title">BACKGROUND</p>
 
-				<p>In the United States, prolonged working hours, lack of free time, and increased purchasing power of consumers have changed the way many Americans eat. Currently, popular food consumption habits and trends among individuals and households have led to a rise in non-communicable diseases such as cardiovascular disease, obesity, and diabetes. Subsequently, consumer concern for wellness is at an all-time high, and food retailers are being referred to as the “last line of defense” in the obesity war.</p><br>
+				<p><a href="https://www.tableau.com/" target="blank">Tableau</a> develops and distributes interactive data visualization software to help its customers store, analyze, and explain data.</p><br>
 				
-				<p>Yet with healthy eating now a priority for many shoppers, how do consumers know what products are healthy, and how do they make their purchase decisions? Some manufacturers have adopted a Front-of-Package (FOP) labeling system because of two motivating factors. The first is to help inform shoppers of healthy products. The second is in shopper marketing, or marketing to customers through the use of FOP label designs.</p><br>
-				
-				<p><b>In an attempt to provide empirical evidence on the effects of different labeling systems on consumer perception of health, this study aimed to investigate the effects of different packaging nutrition label information on perceived healthiness.</b></p>
+				<p>Tableau products provide a large selection of services, including mapping functionality, custom geocoding, real-time operations, and data cleaning. Users can purchase Tableau Desktop, Tableau Server, and Tableau Online. Further, Tableau Reader and Tableau Public are available for free. <b><i>A disadvantage of this tremendous range is that users may be confused when seeking help</i></b>.</p><br>
+
+				<p>When users have difficulty with a Tableau product, they often search online (e.g., Google) for support rather than first trying the product's built-in Help function. An advantage of the built-in Help is that it is always written for the user's Tableau version. For users without the most recent version of the product, searching outside of Tableau can result in frustration as online searches generally provide information about the most recent version. Further, users often do not immediately recall the exact version they use, thus leading to more difficulty when they seek product-specific help on Tableau's Help pages.</p><br>
+			
+				<div class="img-wrap">
+					<img src="img/interaction_map.jpg">
+				</div>
+
+				<br>
+
+				<p><b><i>Tableau was interested in improving user help search experience and wanted more information about how users seek help to inform this work</i></b>.</p>
+
+				<p class="subsection_title">RESEARCH QUESTIONS</p>
+
+				<blockquote>How do Tableau users find help?</blockquote><br>
+
+				<ol id="research_questions">
+					<li>What are the pros and cons of each path?</li>
+					<li>Do search methods differ by user experience level?</li>
+					<li>How do users identify the version number?</li>
+					<li>What are the pain points for identifying the version number?</li>
+				</ol>
 
 				<p class="subsection_title">MY ROLE</p>
 
-				<p id="role">UX Researcher, Data Analyst</p>
+				<p id="role">Usability Tester</p>
 
 				<p class="subsection_title">TIMEFRAME</p>
 
-				<p id="timeframe">10 weeks (Fall 2018)</p>
-			</div>
+				<p id="timeframe">10 weeks (Winter 2019)</p>
+			
+				<p class="section_title">Methods</p> 
 
-			<div class="col-3-wrapper" id="hide">
-				<iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=ftmfvsa0p&bgcolor=EEEEEE&t=1546501453" width="640" height="385" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
-			</div>
+				<p class="subsection_title">RECRUITMENT</p>
 
-			<div class="col-1-wrapper">
-				<p class="section_title" id="title_bottom">Hypothesis</p>
+				<p>Participants were recruited through word-of-mouth and social media posts.</p><br id="mobile_hide">
 
-				<p>We hypothesized that displaying a Per Serving or Per Box clarification note on the FOP label would affect consumers’ perception of the healthiness of the food products shown in this study.</p><br>
+				 <video width="560" height="360" controls>
+  					<source src="videos/tableau_recruitment.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video> 
 
-				<div class="img-wrap">
-					<img src="img/hypothesis.jpg" id="hypothesis_image" alt="">
-				</div>
+				<p class="subsection_title">PARTICIPANTS</p>
 
-				<p>FOP label constituted an <i>independent variable</i>. Perceived healthiness of a food item was the <i>dependent variable</i>.</p>
+				<p>In total, 10 individuals volunteered to join the study. Given that 5 participants is generally considered the <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/" target="blank">minimum</a> for usability research of this kind, this sample size can be viewed as more than adequate.</p><br>
 
-				<p class="section_title">Study Design</p>
-
-				<p class="subsection_title">METHOD</p>
-
-				<p>A true <b>between-subjects experimental design</b> was used for this study.</p><br>
-
-				<p>All participants were presented with a survey of 8 images of individual food packages, followed by a corresponding 7-point Likert scale (from <i>Very Unhealthy</i> to <i>Very Healthy</i>) to measure perceived healthiness. Unaltered images were presented to the Control group; the photoshopped Per Serving or Per Box labels were added to the images for the experimental conditions.</p><br>
-
-				<p>To avoid creating a misinformed bias towards foods with added vitamins and minerals, our label purely displayed calories, protein, fat and carbohydrate content.</p><br>
-			</div>	
-
-			<div class=col-2-wrapper>
-				<div class="img-wrap">
-					<img src="img/likert_scale.jpg" alt="">
-				</div>
-			</div> -->
-
-			<div class="col-1-wrapper">
-				<div class="img-wrap">
-					<img src="img/coming_soon.jpg" alt="">
-				</div>
-
-				<!--<p class="subsection_title">INFLUENCES OF GENDER</p>
-
-				<p>The two-way ANOVA of participants’ gender and group on perceived healthiness for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/influences_of_gender.jpg" alt="">
-				</div>
-
-				<p>We continued our investigation into the effects of participants’ gender by comparing the male and female populations. For this, we first considered the Likert scale data to be <i>interval</i> and the score distribution to be <i>parametric</i>. We then conducted a two-tailed t-test to compare male and female populations, which yielded p = 0.87 and thus the data being not statistically significant.</p><br>
-
-				<p>To be conservative with our calculations, we also considered the Likert scale data to be <i>ordinal</i> and the score distribution to be <i>non-parametric</i>. We then conducted a Mann-Whitney U test to compare male and female populations, which also was not statistically significant.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/mann_whitney_gender.jpg" alt="">
-				</div>
-
-				<p class="subsection_title">INFLUENCES OF EDUCATION</p>
-
-				<p>A two-way ANOVA was applied in RStudio to assess the influence of participants’ education level on perceived healthiness as well as their interactions. The first factor in the two-way ANOVA was the group and the second was level of education. The data for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05, though Sweet Tea came close at p = 0.0522.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/influences_of_education.jpg" alt="">
-				</div>
-
-				<p class="subsection_title">INFLUENCES OF INCOME</p>
-
-				<p>A two-way ANOVA was applied in RStudio to assess the influence of participants’ income on the group as well as their interactions. The first factor in the two-way ANOVA was the group and the second was income range. The data for each food package resulted in most of the data not being statistically significant with a significance threshold of p < 0.05.</p><br>
-
-				<p>The interaction of the group and income range of the Cereal package proved to have a statistically significant effect on perceived healthiness, with p = 0.025. Also, the group value of the two-way ANOVA of the Oreos package proved to have a statistically significant effect on perceived healthiness, with p = 0.037.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/influences_of_income.jpg" alt="">
-				</div>
-
-				<p class="subsection_title">INFLUENCES OF AGE</p>
-
-				<p>A two-way ANOVA was applied in RStudio to assess the influence of participants’ age on the group as well as their interactions. The first factor in the two-way ANOVA was the group and the second was age range. The data for each food package resulted in the data not being statistically significant with a significance threshold of p < 0.05, though Quiche came relatively close at p = 0.0677.</p><br>
-
-				<div class="img-wrap">
-					<img src="img/influences_of_age.jpg" alt="">
-				</div>
-
-				<p class="subsection_title">INTERESTING OBSERVATIONS</p>
-
-				<p>While our study did not produce statistically significant results overall, we were able to make some interesting observations from our data.</p><br>
-
-				<table>
+				<table class="participants">
 					<tr>
-						<td id="left">
-							<ol>
-								<li id="observations">The product rated the most healthy was Trail Mix, with a mean score of 4.15 across groups, and the most unhealthy was Oreos with a mean score of 1.63</li>
-								<li id="observations">Cereal was rated exactly the same across all groups with a mean of 4.00</li>
-								<li id="observations">Quiche was the only food item with lower means in the Per Serving and Per Box groups than in the Control group</li>
-							</ol>
+						<td class="col_left">
+							<p class="orange_title"><b>Participants</b></p>
+							<p>10 adults</p><br>
 						</td>
-						<td id="right">
-							<ol>
-								<li id="observations">Some interesting demographic results were that those with a high school education rated all food the lowest, or most unhealthy, at a mean of 2.89, and doctorates rated the foods the healthiest at 4.00</li>
-								<li id="observations">Respondents making less than $19,000 annually rated all foods higher on average than other groups</li>
-							</ol>
+						<td class="col_middle">
+							<p class="orange_title"><b>Demographics</b></p>
+							<p>8 males, 2 females</p><br>
+						</td>
+						<td class="col_right">
+							<p class="orange_title"><b>Testing Environment</b></p>
+							<p>5 in-person, 5 remote</p><br>
+						</td>
+					</tr>
+					<tr>
+						<td class="col_left">
+							<p class="orange_title"><b>Tableau Expertise</b></p>
+							<p>5 novices</p>
+							<p>3 experienced</p>
+							<p>2 advanced</p>
+						</td>
+						<td class="col_middle">
+							<br id="mobile_show"><p class="orange_title"><b>Background</b></p>
+							<p>8 researchers / analysts</p>
+							<p>2 designers / creatives</p>
+						</td>
+						<td class="col_right">
+							<br id="mobile_show"><p class="orange_title"><b>Usage</b></p>
+							<p>2 professional</p>
+							<p>5 academic</p>
+							<p>3 first-timers</p>
 						</td>
 					</tr>
 				</table>
 
-				<p class="section_title" id="title_bottom">Discussion</p>
+				<p class="subsection_title">TASKS AND METRICS</p>
 
-				<p>Through the 384 data points we analyzed, we concluded that the FOP labels do not affect consumers perception of the healthiness of a food. <b><i>This led us to a larger question: what is the most important factor in a consumer’s perception of a nutritional label? The label design or the consumer’s prior knowledge of nutrition</i></b>?</p><br>
+				<p><b>Pre-testing interviews:</b> during the first portion of the testing, we engaged participants in open-ended questions about their general methods of searching for help when using the software. We evaluated these data by gleaning and analyzing the common themes and frequencies.</p><br>
 
-				<p>Our outcomes are consistent with the larger criticisms against food package labeling. There are many studies that criticize not only the design of FOP labels, but the guidelines and regulations (or lack thereof) surrounding them. Specifically, Graham et al. (2016) produced a similar study with a comparable result of FOP labeling leading to more healthful food choices not being supported. Further, Soederberg, Miller, and Cassady (2015) determined that prior knowledge of nutrition is not taken into account in many of the studies that are conducted on food labels, but nutrition knowledge is paramount in making healthy food choices.</p>
+				<p><b>Think aloud testing:</b> the next portion of the testing consisted of unobtrusively observing participants complete the tasks while describing their actions and thoughts. We noted the pain points and decisions made. </p><br>
 
-				<p class="subsection_title">STUDY LIMITATIONS</p>
+				<table class="tasks_table">
+					<tr>
+						<td><p id="centered"><b>Tasks</b></p></td>
+						<td><p id="centered"><b>Metrics</b></p></td>
+					</tr>
+					<tr>
+						<td class="table_left_padding" id="tasks">
+					
+							<p>1. "Imagine you have been trying to figure out how to [Tableau task] and you need help. Please find the answer the way you normally would for software of this type."</p>
 
-				<p>Some limitations that may impact the larger applicability of our research are the platform and the data collection method we used.</p><br>
+							<p class="tab">(a) For users familiar with multiple Tableau products, ask whether their process changes by product.</p>
 
-				<p>The platform we used for recruitment, Amazon’s Mechanical Turk, is known for having participants whose work method is governed by speed of test completion instead of intrinsic motivation to advance science. This could have affected the honesty of participants’ responses – answers made quickly instead of honestly.</p><br>
+							<p class="tab">(b) For users familiar with competitors' products (e.g. Microsoft Power BI), ask about their process for similar tasks.</p><br>
 
-				<p>Another limitation of using a crowdsourcing platform is the lack of ability to dive deeper into and follow up on participants’ perception and attention (i.e. have they actually noticed the FOP labels?).</p><br>
+							<p>2. "Please identify what Tableau version you are using."</p><br id="mobile_show">
+						</td>
+						<td class="table_right_padding" id="metrics">
+							<ol>
+								<br id="mobile_show"><li id="metrics_list">Task completion (dichotomous yes/no)</li>
+								<li id="metrics_list">Task completion time (in seconds)</li>
+								<li id="metrics_list">False starts/attempts per task (numeric quantity)</li>
+								<li id="metrics_list">Paths to task completion (notation of user journey)</li>
+								<li id="metrics_list">Notation of pain points - moments and decisions that seemed to impede users' success (list of design features)</li>
+								<li id="metrics_list">Notation of what went well</li>
+							</ol> 
+						</td>
+					</tr>
+				</table>
+				
+				<br id="mobile_hide">	
 
-				<p>Finally, due to conducting an unmoderated, remote survey, we did not have the ability to follow up with participants and ask further questions about their decisions or if they noticed the label. Future studies can either be conducted in person or expand the survey to test for these factors.</p>
+				<p><b>Participatory design:</b> after the testing, we interviewed participants to understand how they felt about the tasks (e.g. task difficulty level, satisfaction with the results, etc.) and asked them to share their suggestions on how they would prefer to get help.</p>
 
-				<p class="subsection_title">FUTURE DESIGN IMPLICATIONS</p>
+				<p class="section_title">Findings</p>
 
-				<p>The results of our study and similar studies hint at a larger issue of a lack of consumer knowledge of nutrition. More diverse research in consumer knowledge and motivation should be taken into account. Future experiments could include:</p><br>
+				<p class="subsection_title">HELP PATHS</p>
 
-				<ul>
-					<li>Performing the experiment in a physical grocery store</li>
-					<li>Different FOP placement, content, color scheme, visual design, and font variation</li>
-					<li>Labels with “Organic”, “Low Carb”, or specific diet terms (e.g. “Keto”, “Vegan”)</li>
-					<li>Food package placement on shelves (front of package, nutrition label facing front)</li>
-					<li>Testing for nutrition knowledge before the study</li>
-				</ul>
+				<div class="img-wrap">
+					<img src="img/help_paths.jpg">
+				</div>
+
+				<br>
+
+				<table class="paths">
+					<tr><p id="centered"><b>No 1. Tableau Official Help Page via Google</b></p></tr>
+					<tr>
+						<td class="table_left">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_up.jpg">
+							</div>
+							<ol id="blue_border_left">
+								<li id="metrics_list">Liked the step-to-step previews from Google</li>
+								
+								<div class="img-wrap" id="previews">
+									<img src="img/previews.jpg">
+								</div>
+						
+								<li id="metrics_list">Liked the combination of words and graphics</li>
+
+								<div class="img-wrap" id="words_graphics">
+									<img src="img/words_graphics.jpg">
+								</div>
+
+								<li id="metrics_list">Perception of accuracy and trustworthiness </li>
+							</ol> 
+						</td>
+						<td class="table_right">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_down.jpg">
+							</div>
+							<ol>
+								<li id="metrics_list">Users didn't understand Help page terminology<br><p class="smaller_font" id="grey">&nbsp; E.g. create a Sheet Selector for a dashboard</p><br></li>
+						
+								<li id="metrics_list">Scattered help content (concept definitions aren't listed, requiring additional help search)<br><p class="smaller_font" id="grey">&nbsp; E.g. create a backup using the TSM command</p><br></li> 
+
+								<li id="metrics_list">Some content pages are text heavy<br><p class="smaller_font" id="grey">&nbsp; E.g. backup Tableau Server data</p><br></li>
+
+								<li id="metrics_list">Content isn't easy to follow (lack of easy-to-follow steps, short videos, etc.)<br><p class="smaller_font" id="grey">&nbsp; E.g. backup Tableau Server data</p></li>
+							</ol> 
+						</td>
+					</tr>
+				</table>
+
+				<br>
+					
+				<table class="paths">
+					<tr><p id="centered"><b>No 2. Google → Tableau Community Forums</b></p></tr>
+					<tr>
+						<td class="table_left">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_up.jpg">
+							</div>
+							<ol>
+								<li id="metrics_list">Users related to forum participants<br><p class="smaller_font" id="blue"><i>"I can follow people's thoughts. They've struggled with the same issue and resolved it."</i></p><br></li>
+						
+								<li id="metrics_list">Users embraced the collaboration aspect<br><p class="smaller_font" id="blue"><i>"[Forums] feel like a collaboration process."</i></p></li>
+							</ol> 
+						</td>
+						<td class="table_right_forums">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_down.jpg">
+							</div>
+							<ol id="blue_border_right">
+								<li id="metrics_list">Not perceived as ultimately trustworthy&nbsp; ⃰</li> 
+								<li id="metrics_list">May take time to find the answer&nbsp; ⃰</li>
+								<li id="metrics_list">May contain incorrect/outdated solutions&nbsp; ⃰</li>
+								<li id="metrics_list">Contain specialized jargon/terminology unfamiliar to novice users&nbsp; ⃰<br></li>
+
+								<br>
+								<p class="smaller_font">&nbsp;&nbsp;&nbsp; ⃰&nbsp;Usability team's observation</p>
+							</ol> 
+						</td>
+					</tr>
+				</table>
+
+				<br>
+
+				<table class="paths">
+					<tr><p id="centered"><b>No 3. Video Tutorials → YouTube / Tableau / 3rd Parties</b></p></tr>
+					<tr>
+						<td class="table_left">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_up.jpg">
+							</div>
+							<ol id="blue_border_left">
+								<li id="metrics_list">Some users were pleased when they found video tutorials in search results<br><p class="smaller_font" id="blue"><i>"Google is the biggest source [for help], and even better is YouTube."</i></p><br><p class="smaller_font" id="blue"><i>"Usually I just like to go and find instructional videos, sometimes through third parties like Lynda."</i></p><br></li>
+						
+								<li id="metrics_list">Tutorials explain and simultaneously demo the process step-by-step, which appeals to visual learners<br><p class="smaller_font" id="blue"><i>"Someone talks about the process AND shows it."</i></p><br></li>
+
+								<li id="metrics_list">Tutorials frequently cover the content in-depth and provide explanations for workflows <br><p class="smaller_font" id="blue"><i>"Nobody has time to read."</i></p></li>
+							</ol> 
+						</td>
+						<td class="table_right">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_down.jpg">
+							</div>
+							<ol>
+								<li id="metrics_list">Some users indicated that videos require too large a time investment<br><p class="smaller_font" id="orange"><i>"The thing about the videos is that you have to commit."</i></p><br></li>
+
+								<li id="metrics_list">A particular topic may be covered mid-way through the video, making within-the-video search time-consuming<br><p class="smaller_font" id="orange"><i>"You can't skip to the end [of a video] to make sure you are achieving the outcome you want."</i></p><br></li>
+
+								<li id="metrics_list">Not every video contains an easy-to-search through transcript&nbsp; ⃰</li>
+
+								<br>
+								<p class="smaller_font"> &nbsp;&nbsp;&nbsp; ⃰&nbsp;Usability team's observation</p>
+							</ol> 
+						</td>
+					</tr>
+				</table>
+
+				<br>
+
+				<table class="paths">
+					<tr><p id="centered"><b>No 4. Tableau's Built-in Help Function</b></p></tr>
+					<tr>
+						<td class="table_left">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_up.jpg">
+							</div>
+							<ol>
+								<li id="metrics_list">Ideally a first path containing helpful links and topics of interest</li><br> 
+								<li id="metrics_list">Strengths include navigation functionality</li> 
+								
+								<div class="img-wrap" id="built_in_help">
+									<img src="img/built_in_help.jpg">
+								</div>
+							</ol> 
+						</td>
+						<td class="table_right_function">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_down.jpg">
+							</div>
+							<ol id="blue_border_right">
+								<li id="metrics_list">The greatest challenge seems to be building confidence in the Help function, as users did not expect it to work well and as such did not even try it<br><p class="smaller_font" id="orange"><i>"I feel like it's a last-case resort [to use the Help menu]".</i></p><br><p class="smaller_font" id="orange"><i>"Usually Help is not very useful. And I wouldn't expect it to be powerful."</i></p><br></li>
+
+								<li id="metrics_list">Several users indicated that they rarely use built-in Help functions in any software<br><p class="smaller_font" id="orange"><i>"I have never used Help in any application."</i></p><br></li>
+
+								<li id="metrics_list">Users' mental model isn't aligned with the intended in-built Help usage<br><p class="smaller_font" id="orange"><i>"I only used built-in Help back in the day, before the internet."</i></p></li>
+							</ol> 
+						</td>
+					</tr>
+				</table>
+
+				<p class="subsection_title">TABLEAU VERSION IDENTIFICATION</p>
+
+				<p>6 users <b>identified</b> their version within 30 seconds without prompting. 4 users <b>took longer</b> than 30 seconds <b>or failed</b> to recognize it.</p><br>
+
+				<table class="paths">
+					<tr><p id="centered"><b>Tableau Version Identification</b></p></tr>
+					<tr>
+						<td class="table_left_verson">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_up.jpg">
+							</div>
+							<ol>
+								<li id="metrics_list">Version number shows up on hovering<br><p class="smaller_font" id="blue"><i>"I knew it from before [previous experience]."</i></p><br></li>
+						
+								<li id="metrics_list">Standardized placement<br><p class="smaller_font" id="blue"><i>"This thing is standardized, so it's easy."</i></p></li>
+							</ol> 
+						</td>
+						<td class="table_right_version">
+							<div class="img-wrap" id="thumbs">
+								<img src="img/thumbs_down.jpg">
+							</div>
+							<ol id="blue_border_right">
+								<li id="metrics_list">Not recognizable<br><p class="smaller_font" id="orange"><i>"This is a very poor way to show the version. I thought it was today's date.”</i></p><p class="smaller_font" id="grey">&nbsp; E.g. 2019.1.0(20191.19.0126.2241)64-bit</p><br></li>
+
+								<li id="metrics_list">Lack of the word "version" or "v"<br><p class="smaller_font" id="orange"><i>"I think it's this one, but it doesn't say 'version', so I'm not sure."</i></p></li>
+							</ol> 
+						</td>
+					</tr>
+				</table>
+
+				<p class="section_title">Recommendations</p>
+
+				<br>
+
+				<table class="recommendations">
+					<tr>
+						<td class="table_left_recommendations">
+							<div class="img-wrap" id="usability_issue">
+								<img src="img/usability_issue.jpg">
+							</div>
+							<p id="centered"><b>Usability Issues</b></p><br> 
+							
+							<ol>
+								<li id="recommendations_list">Unfamiliar terminology</li>
+							</ol> 
+						</td>
+						<td class="table_right_recommendations">
+							<div class="img-wrap" id="recommendation">
+								<img src="img/recommendation.jpg">
+							</div>
+							<p id="centered"><b>Recommendations</b></p><br>
+							<ol class="grey_border_left">
+								<li id="recommendations_list">Introduce an Onboarding Experience covering commonly used terminology</li><br>
+								<li id="recommendations_list">Provide an easily accessible "cheat sheet" for users while they are using the software</li><br>
+								<li id="recommendations_list">Clarify unfamiliar terminology used in Tableau Help pages</li>
+							</ol> 
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_recommendations">
+							<ol id="grey_border_top">
+								<br><li id="recommendations_list">Built-in Help function's search results do not meet users' expectations</li>
+							</ol> 
+						</td>
+						<td class="table_right_recommendations">
+							<ol class="grey_border_left" id="grey_border_top">
+								<br><li id="recommendations_list">Optimize search engine within Tableau Help<br>
+								<p class="tab">(a) Synonyms</p>
+								<p class="tab">(b) Synonyms</p>
+								<p class="tab">(c) Links to relevant content (videos, forums)</p></li>
+							</ol> 
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_recommendations">
+							<ol id="grey_border_top">
+								<br><li id="recommendations_list">Icons not always intuitive</li>
+							</ol> 
+						</td>
+						<td class="table_right_recommendations">
+							<ol class="grey_border_left" id="grey_border_top">
+								<br><li id="recommendations_list">Introduce gifs/rich tool tips upon hovering<br><p class="smaller_font" id="grey">&nbsp; E.g. Photoshop</p></li>
+
+								<div class="img-wrap" id="photoshop">
+									<img src="img/photoshop.png">
+								</div>
+							</ol> 
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_recommendations">
+							<ol id="grey_border_top">
+								<br><li id="recommendations_list">Users may not find or recognize a version number</li>
+							</ol> 
+						</td>
+						<td class="table_right_recommendations">
+							<ol class="grey_border_left" id="grey_border_top">
+								<br><li id="recommendations_list">Add the word "version" or "v" to clarify<br><p class="smaller_font" id="grey">&nbsp; E.g. Version: 2019.1.0(20191.19.0126.2241)64-bit</p></li>
+							</ol> 
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_recommendations">
+							<ol id="grey_border_top">
+								<br><li id="recommendations_list">Unclear how to find Help content for a particular operating system</li>
+							</ol> 
+						</td>
+						<td class="table_right_recommendations">
+							<ol class="grey_border_left" id="grey_border_top">
+								<br><li id="recommendations_list">Clearly label operating systems</li>
+								<li id="recommendations_list">Allow users to select their operating system and version<br><p class="smaller_font" id="grey">&nbsp; E.g. Microsoft Help page</p></li>
+
+								<div class="img-wrap">
+									<img src="img/microsoft.jpg">
+								</div>
+							</ol> 
+						</td>
+					</tr>
+				</table>			
+
+				<p class="section_title" id="mobile_hide">Limitations and Next Steps</p>			
+
+				<br id="mobile_hide">
+
+				<table class="tasks_table">
+					<tr>
+						<td><p class="orange_title" id="centered"><b>Limitations</b></p></td>
+						<td><p class="orange_title" id="centered"><b>Next Steps</b></p></td>
+					</tr>
+					<tr>
+						<td class="table_left_padding" id="blue_border_left">
+							<ol>
+								<li id="metrics_list">Convenience sample of mostly student participants</li>
+							</ol>	
+						</td>
+						<td class="table_right_padding">
+							<ol>
+								<li id="metrics_list">Incentivize a small pool of Tableau users within various industries and roles to participate in further, more targeted testing</li>
+							</ol>	
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_padding" id="blue_border_left">
+							<ol>
+								<li id="metrics_list">Due to differences in participant experience level, we did not use the same tasks for all participants</li>
+							</ol>	
+						</td>
+						<td class="table_right_padding">
+							<ol>
+								<li id="metrics_list">Select a more standardized set of tasks in subsequent evaluations</li>
+							</ol>	
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_padding" id="blue_border_left">
+							<ol>
+								<li id="metrics_list">For some participants, help search while being observed may differ from help search when alone</li>
+							</ol>
+						</td>
+						<td class="table_right_padding">
+							<ol>
+								<li id="metrics_list">Use unmoderated testing for subsequent evaluation (e.g. video diaries)</li>
+							</ol>	
+						</td>
+					</tr>
+					<tr>
+						<td class="table_left_padding" id="blue_border_left">
+							<ol>
+								<li id="metrics_list">Most participants were familiar with and tested on Tableau Desktop</li>
+							</ol>	
+						</td>
+						<td class="table_right_padding">
+							<ol>
+								<li id="metrics_list">It could be helpful to observe Help search behavior for other Tableau products</li>
+							</ol>	
+						</td>
+					</tr>
+				</table>
 				
 				<div class="img-wrap">
-					<img src="img/fop_icon.jpg" id="icon" alt="">
-				</div> -->
+					<img src="img/tableau_icon.jpg" id="icon" alt="">
+				</div>
 
 				<div class="project-nav-wrap">
-					<a href="index.html"><div class="left-nav">home<div class="text-on-hover">< Back to Portfolio</div></div></a>
+					<a href="index.html"><div class="left-nav">home<div class="text-on-hover">< Back to Portfolio</div></div></a> 
 				</div>
 			</div>	
 
 		</section>
 
 	</main>
-			
+
 	<footer>Built from scratch by Yeva T. &copy; 2019</footer>
 
 </body>
